@@ -5,6 +5,9 @@ pipeline {
       agent {
         docker 'node'
       }
+      environment {
+        SELENIUM_HOSTNAME = credentials('selenium-hostname')
+      }
       steps {
         sh 'npm install'
         sh 'npm run test:selenium'

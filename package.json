@@ -23,7 +23,6 @@
     "@wdio/junit-reporter": "^6.0.14",
     "@wdio/local-runner": "^6.0.15",
     "@wdio/mocha-framework": "^6.0.15",
-    "@wdio/selenium-standalone-service": "^6.0.15",
     "@wdio/spec-reporter": "^6.0.14",
     "@wdio/sync": "^6.0.15",
     "allure-commandline": "^2.13.0",
