@@ -7,7 +7,7 @@ pipeline {
       }
       steps {
         sh 'npm install'
-        sh 'npm test:selenium'
+        sh 'npm run test:selenium'
       }
       post {
         always {
