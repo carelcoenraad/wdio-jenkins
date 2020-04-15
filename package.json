@@ -12,7 +12,7 @@
     "pretest": "npm run lint",
     "test": "wdio",
     "test:report": "allure serve \"./reports/allure\"",
-    "test:selenium": "wdio wdio.selenium.conf.js"
+    "test:selenium": "npm run lint && wdio wdio.selenium.conf.js"
   },
   "dependencies": {},
   "devDependencies": {

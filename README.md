@@ -6,6 +6,7 @@ Demonstrate the usage of WebdriverIO in a Jenkins pipeline.
 
 ### Prerequisites
 
+- Docker
 - Node.js (LTS or newer)
 - NPM
 
@@ -19,10 +20,20 @@ npm install
 
 ### Testing
 
-Run tests
+Run tests with `chromedriver`
 
 ```bash
 npm test
+```
+
+Run tests with Selenium
+
+```bash
+# Start Selenium Grid Hub detached
+docker-compose up -d
+
+# Run tests
+npm run test:selenium
 ```
 
 Run reporting
@@ -33,7 +44,7 @@ npm run test:report
 
 ## TODO
 
-- [ ] Setup multiple browsers
+- [ ] Setup Jenkins with Selenium Grid Hub
 - [ ] Setup multiple environments (dev/tst/acc/prd)
 - [ ] Setup parameterized tests
 - [ ] Setup secrets usage (e.g. login page)
